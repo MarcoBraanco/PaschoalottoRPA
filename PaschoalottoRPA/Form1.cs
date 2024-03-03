@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PaschoalottoRPA
 {
     public partial class Form1 : Form
@@ -15,6 +16,20 @@ namespace PaschoalottoRPA
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void ButtonStart_Click(object sender, EventArgs e)
+        {
+            SeleniumActions selenium = new SeleniumActions();
+
+            var data = selenium.GetDataFromWebsite();
+
+            if (data.Item6 != "Success")
+            {
+                MessageBox.Show("Erro ao realizar extraçao de dados");
+            }
+
+
         }
     }
 }
