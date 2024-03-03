@@ -22,7 +22,7 @@ namespace PaschoalottoRPA
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
         }
 
-        public (int, int, float, int, int, string) GetDataFromWebsite()
+        public (int wpmData, int keyStrokesData, float accuracyData, int correctWordsData, int wrongWordsData, string status) GetDataFromWebsite()
         {
             try
             {
@@ -84,7 +84,7 @@ namespace PaschoalottoRPA
             return elements;
         }
 
-        public (int, int, float, int, int, string) GetData()
+        public (int wpmData, int keyStrokesData, float accuracyData, int correctWordsData, int wrongWordsData, string status) GetData()
         {
 
             try

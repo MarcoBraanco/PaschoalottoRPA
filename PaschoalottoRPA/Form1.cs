@@ -18,8 +18,12 @@ namespace PaschoalottoRPA
             InitializeComponent();
         }
 
-        private void ButtonStart_Click(object sender, EventArgs e)
+        private void ButtonStart_Click(object sender, EventArgs e)  
         {
+            DatabaseActions db = new DatabaseActions();
+
+            db.OpenConnection();
+
             SeleniumActions selenium = new SeleniumActions();
 
             var data = selenium.GetDataFromWebsite();
@@ -29,6 +33,8 @@ namespace PaschoalottoRPA
                 MessageBox.Show("Erro ao realizar extraçao de dados");
             }
 
+
+            db.InsetDataToTable(data.wpmData, data.keyStrokesData, data.accuracyData, data.correctWordsData, data.wrongWordsData);
 
         }
     }

@@ -1,0 +1,5 @@
+{
+    "ConnectionStrings": {
+        "ConnectionString": "Host=SEULOCALHOST;Username=SEUUSERNAME;Password=SUASENHA;Database=SEUDATABASE"
+    }
+}

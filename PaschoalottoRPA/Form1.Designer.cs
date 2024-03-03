@@ -33,9 +33,9 @@
             // 
             // ButtonStart
             // 
-            this.ButtonStart.Location = new System.Drawing.Point(354, 198);
+            this.ButtonStart.Location = new System.Drawing.Point(94, 65);
             this.ButtonStart.Name = "ButtonStart";
-            this.ButtonStart.Size = new System.Drawing.Size(75, 23);
+            this.ButtonStart.Size = new System.Drawing.Size(252, 55);
             this.ButtonStart.TabIndex = 0;
             this.ButtonStart.Text = "Iniciar";
             this.ButtonStart.UseVisualStyleBackColor = true;
@@ -45,10 +45,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(446, 193);
             this.Controls.Add(this.ButtonStart);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "PaschoalottoRPA - Fast Finger reader";
             this.ResumeLayout(false);
 
         }
